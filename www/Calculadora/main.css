@@ -1,0 +1,21 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 200px;
+    margin: 50px auto;
+}
+.teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: red;
+}
+
+#inputA{
+    width: 100%;
+    box-sizing: border-box;
+
+}

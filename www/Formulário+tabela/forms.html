@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de Inscrição</h2>
+        <form>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Endereço de Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="inscricao">Tipo de Inscrição:</label>
+            <select id="inscricao" name="inscricao" required>
+                <option value="participante">Participante</option>
+                <option value="palestrante">Palestrante</option>
+                <option value="voluntario">Voluntário</option>
+            </select>
+
+            
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">Aceito os termos e condições</label>
+
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </div>
+    <div class="table">
+        <h3>Programação das Palestras</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Título da Palestra</th>
+                    <th>Palestrante</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 10:00</td>
+                    <td>Inovação em Tecnologia</td>
+                    <td>João Silva</td>
+                    <td><button>Mais informações</button></td>
+                </tr>
+                <tr>
+                    <td>10:15 - 11:15</td>
+                    <td>O Futuro da Web</td>
+                    <td>Maria Fernandes</td>
+                    <td><button>Mais informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+</body>
+</html>

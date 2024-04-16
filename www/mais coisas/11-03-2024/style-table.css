@@ -1,0 +1,44 @@
+.container{
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+@media(max-width: 768px){
+    .container{width: 100%;}
+}
+body{
+    margin: 0;
+    background-color: white;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+thead{
+    font-weight: bolder;
+    background-color: rgb(20, 103, 198);
+    color: white;
+}
+tbody tr{
+    background-color: silver;
+}
+tbody tr:nth-child(odd){
+    background-color: blueviolet;
+}
+tbody button{
+    background-color: rgb(133, 226, 10);
+    border: none;
+    padding: 10px;
+
+}
+tbody button:hover {
+    background-color: rgb(57, 95, 7);
+}

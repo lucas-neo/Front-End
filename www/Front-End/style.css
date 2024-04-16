@@ -1,0 +1,46 @@
+body{
+    background-color: #098;
+    margin: 0;
+    padding: 0;
+}
+/*utilizar id entao #*/
+#cabecalho{
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#navegacao{
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+}
+#navegacao a{ 
+    text-decoration: none; 
+    color: #000;
+    padding: 5px;
+}
+#conteudo-principal{
+    margin: 10px;
+}
+#rodape{
+   background-color: antiquewhite;
+}
+
+#navegacao a:hover{
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+/*quando eu uso class eu uso o ponto*/
+.conteudo-principal{
+    
+    height: 300px;
+    padding: 20px;
+}
+.rodape{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
