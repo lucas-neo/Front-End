@@ -47,7 +47,7 @@
             margin: 0 auto;
             width: 300px;
         }
-        input[type="text"], input[type="email"]{
+        input[type="text"], input[type="email"], select{
             width: 100%;
             padding: 8px;
             border: 1px solid #ddd;
@@ -90,6 +90,12 @@
             padding-inline: 50px;
             
         }
+        #mensagem{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: 10px;
+        }
        
     </style>
 </head>
@@ -109,18 +115,30 @@
         
     </section>
     <div class="container">
-        <form>
+        <form id="form" onsubmit="exibirMensagem(); return false;">
             <label for="name">Nome</label>
             <input type="text" id="name" name="name" required>
             <label for="email">E-mail</label>
             <input type="email" id="eamil" name="email" required>
+            <label for="escolha">O quão cruzeiro você é?</label>
+            <select id="escolha" name="escolha">
+                <option value="bastante">Bastante</option>
+                <option value="muito">Muito</option>
+                <option value="super">MDS é o cabuloso</option>
+            </select>
             <input type="submit" value="Enviar">
         </form>
+        <div id="mensagem" style="display: none">Obrigado!</div>
         <ul class="icones-forms">
             <li><img src="./icons/Facebook.png"></li>
             <li><img src="./icons/Instagram.png"></li>
             <li><img src="./icons/WhatsApp.png"></li>
         </ul>
     </div>
+    <script>
+        function exibirMensagem(){
+            document.getElementById('mensagem').style.display = 'flex';
+        }
+    </script>
 </body>
 </html>
